@@ -1,4 +1,3 @@
-# validador.py
 # Lê PDF, envia conteúdo ao modelo e pede checklist
 import os
 from dotenv import load_dotenv
@@ -6,7 +5,7 @@ import pdfplumber
 from openai import OpenAI
 
 load_dotenv()
-API_KEY = os.getenv("OPENAI_API_KEY")
+API_KEY = os.getenv("OPENAI_KEY")
 client = OpenAI(api_key=API_KEY)
 
 REGRAS = [
